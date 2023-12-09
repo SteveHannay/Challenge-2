@@ -8,8 +8,10 @@
   --Colour_NavColour: white;
   --Colour_NavHoverBackground:#13293d; 
 
-  --Colour_WebsiteFlexboxBackground:#fff;
+  --Colour_WebsiteFlexboxBackground:rgba(222, 219, 200, 0.882);
   --Colour_WebsiteNameHoverBackground:#13293d; 
+
+  --Colour_Footer:#514f78;
 
   --Border-radius: 50px;
 
@@ -55,7 +57,7 @@ p {
 /*  ADDED BY STEVE */
 
 
-/* HEADER, NAVIGATION BAR, FOOTER */
+/* MAIN LAYOUT */
 header {
   padding: 20px;
   text-align: center;
@@ -75,42 +77,52 @@ nav a {
   text-align: center;
 }
 
+section {
+
+  padding: 14px 20px;
+
+}
+
+
+
+
 footer {
   margin: 1.5rem;
   text-align: center;
+  font-size: 10px;
+  color: var(--Colour_Footer);
 }
+
+.about{
+  padding: 100px 100px;
+  color:red;
+}
+
 
 
 
 /* WEBSITE CARDS */
 .websites-flex-container {
-  /*
-  flex: 1;
-  background-color: #fff;
-  padding: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  */
 
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-  background-color: var(--Colour_WebsiteFlexboxBackground);
+
+  background-color: var(--Colour_WebsiteFlexboxBackground); 
   justify-content: center;
 
 }
 
 .card {
+  background-color: white;
   border-style: solid;
   border-width: 1px;
   border-radius: var(--Border-radius);
-  padding: 10px;
+  padding: 20px;
   flex: 0 0 400px;
   box-shadow: 10px 10px 5px #aaaaaa;
   margin: 20px;
+  text-align: center;
 }
 
 .card > header {
@@ -124,6 +136,7 @@ footer {
 
 .card > img {
   width: 100%;
+  
 }
 
 
