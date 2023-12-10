@@ -18,6 +18,8 @@
 }
 
 
+/*  BASIC FORMATTING */
+
 * {
   box-sizing: border-box;
 }
@@ -54,12 +56,9 @@ p {
 }
 
 
-/*  ADDED BY STEVE */
-
-
 /* MAIN LAYOUT */
 header {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   background: var(--Colour_HeaderBackground);
   color: var(--Colour_Header);
@@ -68,6 +67,7 @@ header {
 nav {
   display: flex;
   background-color: var(--Colour_NavBackground);
+  justify-content: right;
 }
 
 nav a {
@@ -83,9 +83,6 @@ section {
 
 }
 
-
-
-
 footer {
   margin: 1.5rem;
   text-align: center;
@@ -93,12 +90,30 @@ footer {
   color: var(--Colour_Footer);
 }
 
-.about{
-  padding: 100px 100px;
-  color:red;
+
+/* POSITIONING */
+
+/* display text within top-left of image within hero banner */
+.hero-banner {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
+.hero-banner-top-left {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
 
+/* used for displaying the "about" picture alongside the "about" description */
+.about-container {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 3fr 0fr;
+  column-gap: 5px;
+ }
+ 
 
 
 /* WEBSITE CARDS */
