@@ -28,7 +28,7 @@ Furthermore, I have become a little more familiar with working with GitHub and R
 
 Open the following webpage from any internet browser.
 
-![link to Horiseon webpage](https://stevehannay.github.io/Challenge-2/)
+![link to Steve Hannay Portfolio page](https://stevehannay.github.io/Challenge-2/)
 
 No installation is necessary. 
 
